@@ -47,7 +47,7 @@
     }
 
     .quiz__header {
-      padding: 24px 54px 7px; /* верхний отступ уменьшен вдвое, нижний резко сокращён */
+      padding: 24px 54px 7px;
     }
 
     .quiz__eyebrow {
@@ -82,7 +82,7 @@
     }
 
     .quiz__body {
-      padding: 20px 54px 54px; /* верхний отступ остался 20px, нижний сохранён */
+      padding: 20px 54px 54px;
     }
 
     .question {
@@ -188,7 +188,7 @@
 
     .result {
       display: none;
-      padding: 46px 54px 54px;
+      padding: 23px 54px 27px; /* верх и низ уменьшены вдвое */
       background: var(--result-bg);
       border-top: 1px solid var(--gray-200);
     }
@@ -300,8 +300,13 @@
       }
 
       .quiz__header {
-        padding-top: 24px; /* сохраняем уменьшенный */
+        padding-top: 24px;
         padding-bottom: 7px;
+      }
+
+      .result {
+        padding-top: 23px;
+        padding-bottom: 27px;
       }
 
       .answer {
@@ -334,7 +339,7 @@
       <h1 class="quiz__title">Готовы ли вы принимать решения как CFO</h1>
       <p class="quiz__lead">
         В каждом вопросе нет очевидно неправильного ответа.
-        Выберите решение, которое вы бы <strong>реально предложили собственнику</strong>
+        Выберите решение, которое вы бы <strong>реально предложили бизнесу</strong>
       </p>
     </header>
 
