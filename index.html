@@ -59,7 +59,6 @@
       text-transform: uppercase;
     }
 
-    /* Основной заголовок уменьшен примерно в 1.5 раза */
     .quiz__title {
       max-width: 760px;
       margin: 0;
@@ -82,10 +81,8 @@
       color: var(--orange-dark);
     }
 
-    /* Прогресс-бар удалён */
-
     .quiz__body {
-      padding: 34px 54px 54px;
+      padding: 20px 54px 54px; /* уменьшен верхний отступ */
     }
 
     .question {
@@ -117,7 +114,6 @@
       text-transform: uppercase;
     }
 
-    /* Заголовки вопросов уменьшены примерно в 1.5 раза */
     .question__title {
       max-width: 790px;
       margin: 0;
@@ -136,7 +132,7 @@
 
     .answers {
       display: grid;
-      gap: 8px; /* уменьшено с 12px */
+      gap: 6px; /* уменьшен */
       margin-top: 28px;
     }
 
@@ -147,10 +143,11 @@
       gap: 14px;
       align-items: start;
       width: 100%;
-      padding: 18px 20px;
+      padding: 14px 18px; /* компактнее */
       color: var(--black);
       background: var(--white);
-      border: none; /* рамки убраны */
+      border: none;
+      border-radius: 8px; /* скругление */
       text-align: left;
       cursor: pointer;
       transition:
@@ -180,6 +177,7 @@
       background: var(--orange-light);
       font-size: 13px;
       font-weight: 800;
+      border-radius: 4px; /* небольшое скругление буквы */
     }
 
     .answer__text {
@@ -251,6 +249,7 @@
       color: var(--gray-900);
       background: var(--white);
       border-left: 5px solid var(--orange);
+      border-radius: 0 8px 8px 0;
       font-size: 16px;
       line-height: 1.55;
     }
@@ -267,6 +266,7 @@
       color: var(--white);
       background: var(--black);
       border: 0;
+      border-radius: 8px;
       font-size: 14px;
       font-weight: 800;
       cursor: pointer;
@@ -305,7 +305,7 @@
 
       .answer {
         grid-template-columns: 32px 1fr;
-        padding: 16px;
+        padding: 12px 14px;
       }
 
       .answer__text {
@@ -336,8 +336,6 @@
         Выберите решение, которое вы бы <strong>реально предложили бизнесу</strong>
       </p>
     </header>
-
-    <!-- Шкала прогресса удалена -->
 
     <section class="quiz__body" id="quizBody">
       <!-- Вопрос 1 -->
