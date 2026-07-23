@@ -114,11 +114,12 @@
       text-transform: uppercase;
     }
 
+    /* Увеличен на 20%: clamp(14px, 2vw, 21px) → clamp(17px, 2.4vw, 25px) */
     .question__title {
       max-width: 790px;
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(14px, 2vw, 21px);
+      font-size: clamp(17px, 2.4vw, 25px);
       line-height: 1.2;
     }
 
@@ -188,7 +189,7 @@
 
     .result {
       display: none;
-      padding: 23px 54px 27px; /* верх и низ уменьшены вдвое */
+      padding: 23px 54px 27px;
       background: var(--result-bg);
       border-top: 1px solid var(--gray-200);
     }
